@@ -1,5 +1,5 @@
 /* line 2, ../scss/_main.scss */
-.is-hidden, .swiper-container-horizontal.swiper-container .swiper-pagination-bullets, .swiper-button-disabled, .slide-info {
+.is-hidden, .swiper-container-horizontal.swiper-container .swiper-pagination-bullets, .swiper-container-horizontal.swiper-container .share-bar, .swiper-button-disabled, .slide-info {
   display: none;
 }
 
@@ -40,21 +40,19 @@ body {
   height: auto;
 }
 /* line 38, ../scss/_main.scss */
-.swiper-container-horizontal.swiper-container:hover .swiper-pagination-bullets {
+.swiper-container-horizontal.swiper-container:hover .swiper-pagination-bullets,
+.swiper-container-horizontal.swiper-container:hover .slide-info,
+.swiper-container-horizontal.swiper-container:hover .share-bar {
   display: block;
 }
-/* line 41, ../scss/_main.scss */
-.swiper-container-horizontal.swiper-container:hover .slide-info {
-  display: block;
-}
-/* line 45, ../scss/_main.scss */
+/* line 44, ../scss/_main.scss */
 .swiper-container-horizontal.swiper-container .swiper-pagination-bullets {
   left: 68%;
   top: -10%;
   width: 253px !important;
   transform: translateX(-50%) rotate(90deg);
 }
-/* line 51, ../scss/_main.scss */
+/* line 50, ../scss/_main.scss */
 .swiper-container-horizontal.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #919b99;
   margin: 0 7px;
@@ -63,7 +61,7 @@ body {
   height: 15px;
   opacity: 1;
 }
-/* line 58, ../scss/_main.scss */
+/* line 57, ../scss/_main.scss */
 .swiper-container-horizontal.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet:after {
   content: url(data);
   position: absolute;
@@ -74,11 +72,11 @@ body {
   width: 10px;
   z-index: 10;
 }
-/* line 69, ../scss/_main.scss */
+/* line 68, ../scss/_main.scss */
 .swiper-container-horizontal.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #c62127;
 }
-/* line 73, ../scss/_main.scss */
+/* line 72, ../scss/_main.scss */
 .swiper-container-horizontal.swiper-container .share-bar {
   position: absolute;
   right: 150px;
@@ -91,7 +89,7 @@ body {
   top: 90%;
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  /* line 73, ../scss/_main.scss */
+  /* line 72, ../scss/_main.scss */
   .swiper-container-horizontal.swiper-container .share-bar {
     font-size: 12px;
     line-height: 18px;

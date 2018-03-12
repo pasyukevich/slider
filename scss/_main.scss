@@ -35,10 +35,9 @@ body {
     width: 75%;
     height: auto;
     &:hover {
-        .swiper-pagination-bullets {
-            display: block;
-        }
-        .slide-info {
+        .swiper-pagination-bullets,
+        .slide-info,
+        .share-bar {
             display: block;
         }
     }
@@ -71,6 +70,7 @@ body {
         }
     }
     .share-bar {
+        @extend .is-hidden;
         @include breakpoint(1024px 1280px) {
             font-size: 12px;
             line-height: 18px;

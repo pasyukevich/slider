@@ -22,9 +22,10 @@ let swiper = new Swiper('.swiper-container', {
       loadPrevNextAmount:10,
     },
 });
-
-$(".icons_facebook").click(function(){
-   alert($('.swiper-slide-active').attr('id'));
+$(".share-buttons").each((index,element)=>{
+     $(element).click(()=>{
+      alert($('.swiper-slide-active').attr('id'));
+     })
 });
 let imagesArray=[];
 $(".swiper-wrapper").children().each((index,element)=>{
